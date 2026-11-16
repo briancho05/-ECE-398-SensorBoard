@@ -45,11 +45,22 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    App/Src/app.c
+    App/Src/cli.c
+    App/Src/config_store.c
+    App/Src/control_table.c
+    App/Src/dxl_protocol.c
+    App/Src/dxl_slave.c
+    App/Src/fsr_adc.c
+    App/Src/platform.c
+    App/Src/rs485.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    App/Inc
+
 )
 
 # Add project symbols (macros)
